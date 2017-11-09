@@ -1,0 +1,156 @@
+@import "fonts"
+@import "vars"
+
+body,html
+    height: 100%
+    margin: 0
+    padding: 0
+    color: $font-color
+
+body
+    font-family: 'Avenir', sans-serif
+    font-size: 16px
+    line-height: 24px
+    font-weight: normal
+
+// Base
+
+.clearfix:after
+    content: ''
+    display: table
+    clear: both
+
+.col-4
+    width: 33.3333%
+    float: left
+
+
+.container
+    max-width: 900px
+    margin: 0 auto
+    box-sizing: border-box
+
+    .inner
+        padding: 0 50px
+
+.title
+    font-size: 2.625em
+    line-height: 1.357em
+    margin: 0
+    text-transform: uppercase
+
+.link
+    text-decoration: none
+    color: $font-color
+
+.list
+    margin: 0
+    padding: 0
+    list-style: none
+
+.btn
+    display: inline-block
+    padding: 6px 24px
+    color: #fff
+    font-weight: 900
+    border-radius: 4px
+    text-transform: uppercase
+    text-decoration: none
+    vertical-align: middle
+    box-sizing: border-box
+    transition: all .3s ease
+
+
+// Modal
+
+.modal
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    overflow-x: hidden
+    overflow-y: auto
+    background-color: rgba(0,0,0, .75)
+    z-index: 999
+
+    &__inner
+        margin-bottom: 50px
+        position: absolute
+        top: 100px
+        left: 50%
+        width: 50%
+        max-width: 600px
+        transform: translateX(-50%)
+        background-color: #fff
+        border-radius: 5px
+
+    &__header
+        position: relative
+        padding: 20px 25px 0
+        text-align: center
+
+    &__close
+        position: absolute
+        top: 0px
+        right: 0px
+        font-size: 2em
+        color: #a1a1a1
+        font-weight: 500
+        cursor: pointer
+        outline: none
+        outline-style: none
+
+    &__content
+        padding: 10px 24px 24px
+
+        .p
+            font-family: Avenir-Book, sans-serif
+            color: rgba(0,0,0,.54)
+
+    &__title
+        text-transform: inherit
+        font-size: 1.2em
+        text-align: left
+        margin-bottom: 0
+
+.form
+
+    &__input
+        font-family: Avenir, sans-serif
+        width: 100%
+        border: none
+        border-bottom: 1px solid #5cb3fd
+        border-radius: 5px
+        font-size: 1em
+
+        &:focus
+            outline: none
+            border-color: #5cb3fd
+
+    &__submit
+        font-family: Avenir, sans-serif
+        border: none
+        cursor: pointer
+        line-height: normal
+
+
+input[type='submit']
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+#form-succes
+
+    .modal__inner
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    .modal__content
+        text-align: center
+        color: #7ed321
+        font-size: 1.2em
+
+@import "media"

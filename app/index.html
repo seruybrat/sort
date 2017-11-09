@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Libertex</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="container">
+
+        <div class="clearfix">
+
+            <a class="link header__left">
+                <img class="img" src="img/logo" alt="logo">
+            </a>
+
+            <a class="link header__right">
+                <img class="img" src="img/logo" alt="logo">
+            </a>
+
+        </div>
+
+        <h1>Стань чемпионом лиги</h1>
+        <h4>Вместе с Хамесом нашим Родригессом</h4>
+
+        <div class="awards">
+            <img class="awards__pic" src="img/award1" alt="award">
+            <img class="awards__pic" src="img/award2" alt="award">
+            <img class="awards__pic" src="img/award3" alt="award">
+        </div>
+
+        <form lass="form" method="POST" action="mail.php" enctype="multipart/form-data">
+
+            <input type="hidden" name="project_name" value="Libertex">
+            <input type="hidden" name="admin_email" value="example@gmail.com">
+            <input type="hidden" name="form_subject" value="contacts">
+
+            <input id="inp-firstname" class="form__input" name="firstname" type="text" placeholder="Имя">
+            <input id="inp-lastname" class="form__input" name="lastname" type="text" placeholder="Фамилия">
+            <input id="inp-phone" class="form__input" name="phone" type="phone" value="+382">
+            <input id="inp-email" class="form__input" name="email" type="mail" placeholder="Эл.почта">
+
+            <input class="btn form__submit" type="submit" value="Порвать всех!">
+            
+        </form>
+
+    </div>
+
+</header>
+
+<section class="tournament">
+    <div class="container">
+
+        <h2>Турнирная таблица</h2>
+
+        <div class="table">
+
+            <div class="table__header">
+                <div class="cell-left">
+                    <span class="cell-number" id="num">№</span>
+                </div>
+                
+                <div class="cell-right">
+                    <span class="cell-deposit">Обьем депозита</span>
+                    <span class="cell-account">Номер счета</span>
+                    <span class="cell-country">Страна</span>
+                </div>
+            </div>
+
+            <ul class="list table__list" id="tournament-list">
+
+                <li class="table__item">
+                    <div class="cell-left">
+                        <span class="cell-number">1</span>
+                    </div>
+                    
+                    <div class="cell-right">
+                        <span class="cell-deposit">$ 5 321</span>
+                        <span class="cell-account">123 456 000</span>
+                        <span class="cell-country flag-ru">
+                        </span>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="table__footer">
+                <button class="btn">Порвать всех!</button>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+<section class="judge">
+
+    <div class="container">
+        <h2>А судьи кто?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione dolore, quo pariatur maiores sit nulla delectus quibusdam facere aspernatur, laborum praesentium totam dolorem, perspiciatis! Perferendis pariatur fugit consequatur, aliquam.</p>
+
+        <iframe width="100%" height="10" src="https://www.youtube.com/embed/WeybvjO0CTo" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+    </div>
+    
+</section>
+
+<footer class="footer">
+    
+    <div class="container">
+        <div class="copywrites">Forex club ltd</div>
+        <address class="address"></address>
+
+        <div class="social">
+            <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/ForexClub" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=89&amp;href=https%3A%2F%2Fwww.facebook.com%2FForexClub&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=true"><span style="vertical-align: bottom; width: 79px; height: 20px;"><iframe name="f29b45ccb1e7278" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df28571ec02d838%26domain%3Dwww.fxclub.org%26origin%3Dhttps%253A%252F%252Fwww.fxclub.org%252Ffaeb81db8f8fd4%26relation%3Dparent.parent&amp;container_width=89&amp;href=https%3A%2F%2Fwww.facebook.com%2FForexClub&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=true" style="border: none; visibility: visible; width: 79px; height: 20px;" class=""></iframe></span>
+            </div>
+
+            <div class="twitter-btn-box">
+                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.d7c36168330549096322ed9760147cf7.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=FXClubOfficial&amp;show_count=true&amp;show_screen_name=true&amp;size=m&amp;time=1510231245785" style="position: static; visibility: visible; width: 239px; height: 20px;" data-screen-name="FXClubOfficial"></iframe>
+            </div>
+        </div>
+
+        <div class="agreement">
+            <a class="link" href="">Условия</a>
+            <a class="link" href="">Условия</a>
+        </div>
+
+        <div class="partners">
+            <div class="partners__text">
+                
+            </div>
+            <div class="partners__logo">
+
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+                <a class="link" href="">
+                    <img src="img/partner.jpg" alt="partner">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="security">
+            <a class="link" href="">
+                <img src="img/macfee.jpg" alt="macfee">
+            </a>
+            <a class="link" href="">
+                <img src="img/macfee.jpg" alt="macfee">
+                Защищено SSL
+            </a>
+        </div>
+    </div>
+
+</footer>
+
+<!--END HEADER -->
+
+<!-- modal -->
+
+<div class="modal" id="form-modal">
+    <div class="modal__inner">
+
+        <div class="modal__header">
+            <h2 class="title2 modal__title">
+                title
+            </h2>
+            <div class="modal__close">
+                <img src="img/close.svg" alt="x">
+            </div>
+        </div>
+
+        <div class="modal__content">
+            <form class="form" method="POST" action="mail.php" enctype="multipart/form-data">
+                <input type="hidden" name="project_name" value="irizi">
+                <input type="hidden" name="admin_email" value="sergiibartkiv@gmail.com">
+                <input type="hidden" name="form_subject" value="contacts">
+
+                <div class="form__field">
+                    <input id="inp-name" class="form__input" name="name" type="text">
+                    <label class="form__lbl" for="inp-name">
+                        Name
+                    </label>
+                </div>
+
+                <div class="form__field">
+                    <input id="message" class="form__input" name="message" type="text" required="">
+                    <label class="form__lbl" for="message">
+                        Message*
+                    </label>
+                </div>
+
+                <div class="modal__btn">
+                    <input class="btn btn_accent form__submit" type="submit" value="Send">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="form-succes">
+    <div class="modal__inner">
+        <div class="modal__content">
+            Thanks
+        </div>
+    </div>
+</div>
+
+<!-- modal END-->
+
+
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
