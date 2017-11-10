@@ -60,6 +60,35 @@ body
     box-sizing: border-box
     transition: all .3s ease
 
+// Table
+
+.table
+    &__item
+        @extend .clearfix
+.cell
+    &-number,
+    &-sum,
+    &-account,
+    &-country,
+        display: inline-block
+        padding: 0 15px
+    &-left
+        width: 20%
+        float: left
+    &-right
+        width: 80%
+        float: left
+    &-sum
+        width: 30%
+    &-account
+        width: 30%
+    &-country
+        width: 10%
+
+    
+
+    
+
 
 // Modal
 
